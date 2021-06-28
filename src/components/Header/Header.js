@@ -8,7 +8,6 @@ import { makeStyles } from '@material-ui/core/styles';
 import MailIcon from '@material-ui/icons/Mail';
 import ContactPhoneIcon from '@material-ui/icons/ContactPhone';
 import Fab from '@material-ui/core/Fab';
-import Navigation from '../Navigation/Navigation';
 
 
 const useStyles = makeStyles((theme) => ({
@@ -53,7 +52,7 @@ const useStyles = makeStyles((theme) => ({
     left: '13px'
   },
   titleLearn: {
-    color: 'white',
+    color: 'black',
     alignSelf: 'flex-start',
   },
   titleED: {
@@ -68,7 +67,7 @@ export default function Header() {
 
   return (
     <div className={classes.root}>
-      <AppBar position="static" style={{backgroundColor: 'black', height: '110px'}}>
+      <AppBar position="static" style={{backgroundColor: 'white', height: '110px'}}>
         <Toolbar className={classes.toolbar}>
           <div className={classes.header1}>
             <div className={classes.companyInfo}>

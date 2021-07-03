@@ -1,4 +1,42 @@
-.makeStyles-title-4{
+*{
+    font-family: 'Montserrat';
+    margin: 0px;
+    padding:0px;
+
+}
+
+.about{
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;   
+}
+.about_left{
+    flex:0.5;
+   flex-wrap: wrap;
+    object-fit: cover;
+     
+}
+.about_right{
+    flex: 0.5;
+  text-align: center;
+  width: 1000px;
+  height: 400px;
+     
+}
+.image{
+    margin-left: 20px;
+    text-align: center;
+    margin-top: 50px;
+}
+.our_story{
+     text-align: center;
+     flex-wrap: wrap;
+}
+.more_text{
+    display: none;
+}
+.card{
+    display: flex;
+    justify-content: space-between ;
+    width:300px;
+    height:200px
 }

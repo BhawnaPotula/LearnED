@@ -13,7 +13,7 @@ const Aboutus = () => {
              <span><h3 style={{color:"black"}}>Learn</h3></span>
              <span><h3 style={{color:"red"}}>ED</h3></span>
              </Button>
-             <Box  style={{width :"600px",marginLeft:"auto"}} >
+             <Box  style={{width :"600px",marginLeft:"auto"}}>
                 <Button  style={{backgroundColor:"white",height:"50px",width:"100px",marginRight:"20px"}}>
                 Home
                 </Button>

@@ -2,7 +2,7 @@
     font-family: 'Montserrat';
     margin: 0px;
     padding:0px;
-
+flex-wrap: wrap;
 }
 
 .about{
@@ -11,15 +11,15 @@
 }
 .about_left{
     flex:0.5;
-   flex-wrap: wrap;
+    
     object-fit: cover;
      
 }
 .about_right{
     flex: 0.5;
+    
   text-align: center;
-  width: 1000px;
-  height: 400px;
+ 
      
 }
 .image{

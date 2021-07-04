@@ -4,3 +4,72 @@
     box-sizing: border-box;
     background: #ffd;
 }
+.LandingPage>h1{
+    font-size:40px;
+    text-align: center;
+    justify-content: center;
+    margin:5px;
+}
+.quiz{
+    display: flex;
+    margin-left: 13%;
+    padding:5px;
+}
+.quiz input{
+    margin:5px;
+}
+.quiz h2{
+    font-size: 30px;
+    margin-left:100px;
+}
+button{
+    margin: 2% 0 1% 45%;
+    padding: 0 10px;
+    background:black;
+    font-size: 30px;
+    border: none;
+    color: white;
+    cursor: pointer;
+  }
+
+.intro{
+    margin: 20px;
+    padding: 10px;
+}
+.container{
+    display:flex;
+    overflow-x: auto;
+}
+.container::-webkit-scrollbar{
+    width:0;
+}
+.card{
+    display:flex;
+    border: 2px solid black;
+    min-width:1000px;
+    height:200px;
+    margin:5px;
+    padding:5px;
+}
+.cards img{
+    width:300px;
+}
+.cards p {
+    width:700px;
+    text-align:center;
+    justify-self:center;
+    margin:5px;
+    padding: 5px;
+}
+.tag{
+    font-size: 50px;
+    margin: 5px;
+    text-align: center;
+    justify-content: center;
+    background: black;
+    color:white;
+} 
+.tag em {
+   color:red;
+   font-size: 55px;
+}  

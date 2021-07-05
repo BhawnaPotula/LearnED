@@ -6,19 +6,19 @@ flex-wrap: wrap;
 }
 
 .about{
-    display: flex;
-    flex-wrap: wrap;   
+    /* display: flex;
+    flex-wrap: wrap;    */
 }
 .about_left{
-    flex:0.5;
+    /* flex:0.5; */
     
-    object-fit: cover;
+    /* object-fit: cover; */
      
 }
 .about_right{
-    flex: 0.5;
+    /* flex: 0.5; */
     
-  text-align: center;
+  /* text-align: center; */
  
      
 }

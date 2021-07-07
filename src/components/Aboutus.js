@@ -1,5 +1,6 @@
 import React ,{useState} from 'react'
 import { Slidebar } from './Slidebar'
+import Full from './Full'   
 import { AppBar,Toolbar,Box,Button, Slide } from '@material-ui/core'
 import "../App.css"
 
@@ -32,11 +33,7 @@ const Aboutus = () => {
       <div className="about_right p-4 col-md-6" style={{flexWrap:"wrap"}}>
         <div className="about_us" style={{flexWrap:"wrap"}}>
          <h1 style={{textAlign:"center pt-4"}}>About Us</h1>
-         <p style={{flexWrap:"wrap"}} className="text-center pb-4">   sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. »<span className="pb-5 more_text"> Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. »
-         Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. »
-          </span><br/>
-         <Button  style={{flexWrap:"wrap" }} variant="outlined" className="text-center">show more</Button>
-        </p>
+         < Full/>
           </div>
       </div>
       </div>

@@ -15,7 +15,7 @@ function App() {
           <Route path='/landing-page' component={LandingPage} />
         </Switch>
       </BrowserRouter>
-      {/* <MainContent/> */}
+      <MainContent/>
       <Footer/>
     </div>
   );

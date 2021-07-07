@@ -7,7 +7,7 @@ import FavoriteIcon from '@material-ui/icons/Favorite';
 import LocationOnIcon from '@material-ui/icons/LocationOn';
 
 
-const appBarHeight = '100px'
+// const appBarHeight = '100px'
 
 const useStyles = makeStyles({
   root: {

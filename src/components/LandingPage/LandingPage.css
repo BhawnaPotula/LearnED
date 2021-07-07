@@ -1,75 +1,202 @@
 .LandingPage{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    background: #ffd;
+    overflow-x: hidden;
 }
-.LandingPage>h1{
-    font-size:40px;
-    text-align: center;
-    justify-content: center;
-    margin:5px;
+.LandingPage input:focus{
+    outline: none;
 }
-.quiz{
+.LandingPage input{
+    border-radius: 10px;
+    border: 2px solid;
+}
+.LandingPage input::placeholder {
+    color: rgb(56, 54, 54);
+    opacity: 1;
+}
+.LandingPage input:-ms-input-placeholder {
+    color: rgb(56, 54, 54);
+}
+#mainImage, #quiz{
     display: flex;
-    margin-left: 13%;
-    padding:5px;
-}
-.quiz input{
-    margin:5px;
-}
-.quiz h2{
-    font-size: 30px;
-    margin-left:100px;
-}
-button{
-    margin: 2% 0 1% 45%;
-    padding: 0 10px;
-    background:black;
-    font-size: 30px;
-    border: none;
-    color: white;
-    cursor: pointer;
-  }
-
-.intro{
-    margin: 20px;
-    padding: 10px;
-}
-.container{
-    display:flex;
-    overflow-x: auto;
-}
-.container::-webkit-scrollbar{
-    width:0;
-}
-.card{
-    display:flex;
-    border: 2px solid black;
-    min-width:1000px;
-    height:200px;
-    margin:5px;
-    padding:5px;
-}
-.cards img{
-    width:300px;
-}
-.cards p {
-    width:700px;
-    text-align:center;
-    justify-self:center;
-    margin:5px;
-    padding: 5px;
-}
-.tag{
-    font-size: 50px;
-    margin: 5px;
-    text-align: center;
+    align-items: center;
     justify-content: center;
-    background: black;
-    color:white;
-} 
-.tag em {
-   color:red;
-   font-size: 55px;
-}  
+}
+#mainImage{
+    width: 100vw;
+}
+#mainImage>img{
+    margin-top: 40px;
+    border-radius: 20px;
+    width: 50%;
+    box-shadow: 15px 20px 10px rgb(0 0 0 / 0.6);
+}
+#quiz{
+    flex-direction: column;
+    height: 100%;
+    width: 35%;
+    justify-content: space-evenly;
+    background: #000;
+}
+#quiz>h1{
+    background: #fff;
+    width: 50%;
+    text-align: center;
+    height: 4vh;
+    position: relative;
+    top: -1vh;
+    padding-top: 1.5vh;
+    border-radius: 30px;
+    font-size: 20px;
+}
+.l_h2{
+    /* padding-bottom: 1.5vh; */
+    font-size: 12px;
+}
+#quiz_form{
+    display: flex; align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    position: relative;
+    top: -2vh;
+    flex-wrap: wrap;
+}
+label, #submitButton{
+    font-size: 25px; margin-right: 20px;
+    font-weight: 600;
+}
+#classInput, #boardInput{
+    height: 50px;
+    font-size: 20px;
+    padding-left: 20px;
+    margin-bottom: 2px;
+}
+#submitButton{
+    width: 15vw;
+    height: 5vh;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    margin: 0 auto;
+}
+#submitButton:hover{
+    background: rgb(97, 94, 94);
+    cursor: pointer;
+}
+#mentorCount{
+    text-align: center;
+    background: #fff;
+    margin: 2vh auto;
+    width: 60%;
+    height: 6vh;
+}
+#no_of_mentor{
+    color: red;
+    font-weight: 600;
+}
+#intro_title{
+    text-align: center;
+    background: #fff;
+    width: 60%;
+    height: 10vh;
+    min-height: 100%;
+    border: 2px solid;
+}
+#services_title, #mentor_title, #testimonials_title{
+    text-align: center;
+    margin: 2vh auto;
+    width: 15%;
+    height: 5vh;
+    color: #fff;
+    background: red;
+    border: 2px solid;
+    border-radius: 20px;
+}
+.testimonial, .mentor, .service{
+    height: 30vh;
+    min-width: 40vw;
+    max-width: 40vw;
+    margin-left: calc(20vw / 3);
+    background: #fff;
+    border: 2px solid;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 15px 20px 10px rgba(0,0,0, 0.6);
+}
+#serviceItems, #mentorItems, #testimonialItems{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 4vh 0;
+    margin-bottom: 8vh;
+    width: 200vw;
+    position: relative;
+    transition: all ease 1s;
+}
+.itemImage{
+    background: #000;
+    float: left;
+    width: 40%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.itemImage>img{
+    height: 90%;
+    width: 90%;
+    margin: auto;
+    border-radius: 20px;
+}
+.itemText{
+    width: 90%;
+    /* text-align: center; */
+    position: relative;
+    top: 25%;
+    left: 5%;
+}
+#intro_demo_div{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 30vh;
+    margin-top: 40px;
+}
+#intro_demo_div>*{
+    border-radius: 20px;
+    box-shadow: 15px 20px 10px rgb(0 0 0 / 0.6);
+}
+#intro_text{
+    /* font-family: 'Lobster', cursive; */
+    font-family: 'Asap', sans-serif;
+    font-weight: 600;
+    width: 80%;
+    margin: auto;
+    margin-top: 40px;
+    /*box-shadow: [horizontal offset] [vertical offset] [blur radius] [optional spread radius] [color];*/
+}
+.itemCarousel{
+    position: relative;
+}
+/*Scroll Buttons*/
+.prevArrow, .nextArrow {
+    cursor: pointer;
+    position: absolute;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: #000;
+    top: 50%;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 5px 5px 0;
+    user-select: none;
+    z-index: 2;
+}
+.nextArrow {
+    right: 0;
+    border-radius: 5px 0 0 5px;
+}
+.prevArrow:hover, .nextArrow:hover {
+    background-color: rgba(0,0,0,0.8);
+    color: #fff;
+}

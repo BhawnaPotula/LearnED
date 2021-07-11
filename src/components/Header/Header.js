@@ -72,19 +72,19 @@ export default function Header() {
           <div className={classes.header1}>
             <div className={classes.companyInfo}>
                 <span>
-                    <IconButton aria-label="search" color="inherit">
+                    <IconButton aria-label="search">
                         <MailIcon />
                     </IconButton>
                 </span>
-                <span>
+                <span style={{color: 'black'}}>
                     info@learned.com
                 </span>
                 <span>
-                    <IconButton aria-label="search" color="inherit">
+                    <IconButton aria-label="search">
                         <ContactPhoneIcon />
                     </IconButton>
                 </span>
-                <span>
+                <span style={{color: 'black'}}>
                     8421652265
                 </span>
             </div>

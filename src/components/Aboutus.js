@@ -1,14 +1,29 @@
-import React ,{useState} from 'react'
-import { Slidebar } from './Slidebar'
-import Full from './Full'   
-import { AppBar,Toolbar,Box,Button, Slide } from '@material-ui/core'
-import "../App.css"
+import React, { useState } from "react";
+import { Slidebar } from "./Slidebar";
+import Full from "./Full";
+import { AppBar, Toolbar, Box, Button, Slide } from "@material-ui/core";
+import { makeStyles, responsiveFontSizes } from "@material-ui/core/styles";
+import Paper from "@material-ui/core/Paper";
+import Grid from "@material-ui/core/Grid";
+
+import "../App.css";
+
+const useStyles = makeStyles((theme) => ({
+    root: {
+        flexGrow: 1,
+    },
+    paper: {
+        padding: theme.spacing(2),
+        textAlign: "center",
+        color: theme.palette.text.secondary,
+    },
+}));
 
 const Aboutus = () => {
-    
+    const classes = useStyles();
     return (
         <div className="main container">
-             {/* <AppBar position="static" style={{backgroundColor:"black" }}>
+            {/* <AppBar position="static" style={{backgroundColor:"black" }}>
         <Toolbar>
            <Button style={{backgroundColor:"white",height:"50px"}}>
              <span><h3 style={{color:"black"}}>Learn</h3></span>
@@ -23,32 +38,67 @@ const Aboutus = () => {
              </Box>
         </Toolbar>
       </AppBar> */}
-      <div  style={{flexWrap:"warp"}}className="about row">
-      <div style={{flexWrap:"wrap"}} className="about_left col-md-6">
-         
-        <img  style={ {objectFit:"cover",flexWrap:"wrap"}} src="https://gifimage.net/wp-content/uploads/2018/04/leadership-gif-6.gif" alt=
-        "pic"/>
-        
-      </div>
-      <div className="about_right p-4 col-md-6" style={{flexWrap:"wrap"}}>
-        <div className="about_us" style={{flexWrap:"wrap"}}>
-         <h1 style={{textAlign:"center pt-4"}}>About Us</h1>
-         < Full/>
-          </div>
-      </div>
-      </div>
-      <div className="our_story p-4">
-        <h1 style={{textAlign:"center"}}>OUR STORY</h1>
-        <p  >
-        Lorem ipsum dolor sit amet, consectetur adipisci elit,
-About Us
-Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. » Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cu sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. »
-        </p>
-      </div>
-      
-        </div>
-      
-    )
-}
+            <div className={classes.root}>
+                <div style={{ flexWrap: "warp" }} className="about row">
+                    <Grid container spacing={3}>
+                        <Grid item xs={12} sm={6}>
+                            <img
+                                className="p-0"
+                                style={{ objectFit: "cover", flexWrap: "wrap" }}
+                                src="https://gifimage.net/wp-content/uploads/2018/04/leadership-gif-6.gif"
+                                alt="pic"
+                            />
+                        </Grid>
 
-export default Aboutus
+                        <Grid item xs={12} sm={6} className="p-2">
+                            <h2 className="text-center">ABOUT US</h2>
+                            <Full />
+                        </Grid>
+                    </Grid>
+                </div>
+
+                <div className="our_story p-4">
+                    <Grid container spacing={3}>
+                        <Grid item xs={12}>
+                            <h1 style={{ textAlign: "center" }}>OUR STORY</h1>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisci
+                                elit, About Us Lorem ipsum dolor sit amet,
+                                consectetur adipisci elit, sed eiusmod tempor
+                                incidunt ut labore et dolore magna aliqua. Ut
+                                enim ad minim veniam, quis nostrum
+                                exercitationem ullam corporis suscipit
+                                laboriosam, nisi ut aliquid ex ea commodi
+                                consequatur. Quis aute iure reprehenderit in
+                                voluptate velit esse cillum dolore eu fugiat
+                                nulla pariatur. Excepteur sint obcaecat
+                                cupiditat non proident, sunt in culpa qui
+                                officia deserunt mollit anim id est laborum. »
+                                Lorem ipsum dolor sit amet, consectetur adipisci
+                                elit, sed eiusmod tempor incidunt ut labore et
+                                dolore magna aliqua. Ut enim ad minim veniam,
+                                quis nostrum exercitationem ullam corporis
+                                suscipit laboriosam, nisi ut aliquid ex ea
+                                commodi consequatur. Quis aute iure
+                                reprehenderit in voluptate velit esse cillum
+                                dolore eu fugiat nulla pariatur. Excepteur sint
+                                obcaecat cu sed eiusmod tempor incidunt ut
+                                labore et dolore magna aliqua. Ut enim ad minim
+                                veniam, quis nostrum exercitationem ullam
+                                corporis suscipit laboriosam, nisi ut aliquid ex
+                                ea commodi consequatur. Quis aute iure
+                                reprehenderit in voluptate velit esse cillum
+                                dolore eu fugiat nulla pariatur. Excepteur sint
+                                obcaecat cupiditat non proident, sunt in culpa
+                                qui officia deserunt mollit anim id est laborum.
+                                »
+                            </p>
+                        </Grid>
+                    </Grid>
+                </div>
+            </div>
+        </div>
+    );
+};
+
+export default Aboutus;

@@ -52,6 +52,7 @@ const Aboutus = () => {
 
                         <Grid item xs={12} sm={6} className="p-2">
                             <h2 className="text-center "style={{fontFamily:"fantasy"}}>ABOUT US</h2>
+                            <h2 className="text-center">ABOUT US</h2>
                             <Full />
                         </Grid>
                     </Grid>
@@ -59,8 +60,9 @@ const Aboutus = () => {
 
                 <div className="our_story p-4">
                     <Grid container spacing={3}>
-                        <Grid item xs={12}>
+                        <Grid item xs={12}
                             <h1 style={{ textAlign: "center" ,fontFamily:"fantasy"}}>OUR STORY</h1>
+                            <h1 style={{ textAlign: "center" }}>OUR STORY</h1>
                             <p>
                                 Lorem ipsum dolor sit amet, consectetur adipisci
                                 elit, About Us Lorem ipsum dolor sit amet,
@@ -78,6 +80,7 @@ const Aboutus = () => {
                                 elit, sed eiusmod tempor incidunt ut labore et
                                 dolore magna aliqua. Ut enim ad minim veniam,
                                 quis nostrum exercitationem ullam corporis 
+                                quis nostrum exercitationem ullam corporis
                                 suscipit laboriosam, nisi ut aliquid ex ea
                                 commodi consequatur. Quis aute iure
                                 reprehenderit in voluptate velit esse cillum

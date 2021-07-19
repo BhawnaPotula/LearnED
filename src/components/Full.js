@@ -54,5 +54,5 @@ const Full = () => {
         </div>
     );
 };
-
+export default Full;
 export default Full;

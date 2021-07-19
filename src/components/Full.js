@@ -41,7 +41,7 @@ const Full = () => {
         <div className="App">
             {showdata ? data.slice(0, 400) : data}
             <br />
-            <div className="justify-content-center align-items-center">
+            <div className="d-flex justify-content-center align-items-center">
                 {" "}
                 <Button
                     variant={"contained"}
@@ -55,4 +55,4 @@ const Full = () => {
     );
 };
 export default Full;
-export default Full;
+// export default Full;

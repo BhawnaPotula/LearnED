@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Slidebar } from "./Slidebar";
 import Full from "./Full";
+import AboutCarousel from "./AboutCarousel";
 import { AppBar, Toolbar, Box, Button, Slide } from "@material-ui/core";
 import { makeStyles, responsiveFontSizes } from "@material-ui/core/styles";
 import Paper from "@material-ui/core/Paper";
@@ -39,19 +40,20 @@ const Aboutus = () => {
         </Toolbar>
       </AppBar> */}
             <div className={classes.root}>
-                <div style={{ flexWrap: "warp" }} className="about row">
+                <div style={{ flexWrap: "warp" }} className="pt-4 about row">
                     <Grid container spacing={3}>
                         <Grid item xs={12} sm={6}>
                             <img
                                 className="p-0"
-                                style={{ objectFit: "cover", flexWrap: "wrap" }}
-                                src="https://gifimage.net/wp-content/uploads/2018/04/leadership-gif-6.gif"
+                                style={{ objectFit: "cover" ,flexWrap: "wrap" ,height:"220px"}}
+                                src="https://tse1.mm.bing.net/th?id=OIP.WfpaaOMaYL3PkR9iggiEqgHaDf&pid=Api&P=0&w=334&h=158"
                                 alt="pic"
                             />
+                            {/* <AboutCarousel /> */}
                         </Grid>
 
                         <Grid item xs={12} sm={6} className="p-2">
-                            <h2 className="text-center "style={{fontFamily:"fantasy"}}>ABOUT US</h2>
+                            {/* <h2 className="text-center "style={{fontFamily:"fantasy"}}>ABOUT US</h2> */}
                             <h2 className="text-center">ABOUT US</h2>
                             <Full />
                         </Grid>
@@ -60,8 +62,8 @@ const Aboutus = () => {
 
                 <div className="our_story p-4">
                     <Grid container spacing={3}>
-                        <Grid item xs={12}
-                            <h1 style={{ textAlign: "center" ,fontFamily:"fantasy"}}>OUR STORY</h1>
+                        <Grid item xs={12}>
+                            {/* <h1 style={{ textAlign: "center" ,fontFamily:"fantasy"}}> OUR STORY</h1> */}
                             <h1 style={{ textAlign: "center" }}>OUR STORY</h1>
                             <p>
                                 Lorem ipsum dolor sit amet, consectetur adipisci

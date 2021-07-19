@@ -7,7 +7,7 @@ const Web = () => {
     const[active,setactive]=useState("Firstcard");
     return (
         <div >
-            <h1 style={{textAlign:"center",fontFamily:"fantasy"}}>OUR TEAM</h1>
+            <h1 style={{textAlign:"center"}}>OUR TEAM</h1>
             <div className="btn">
             <AppBar position="static "style={{background:"lightgray",}}>
                 <Toolbar style={{ display:"flex",justifyContent:"space-between"}} >
